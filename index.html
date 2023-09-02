@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Yummy</title>
+</head>
+
+<body>
+    <div class="spiner">
+        <span class="loader"></span>
+    </div>
+    <nav class="position-fixed navBar text-white-50">
+        <div class="openLink">
+            <div> <img src="./images/logo.png" class="logo" alt=""></div>
+
+
+            <div><span>
+                <i class="fa fa-align-justify openbtn"></i>
+            <i class="fa fa-align-justify fa-times ps-1 closebtn"></i>
+        </span></div>
+
+            <div class="fs-6 pb-3">
+                <div>
+
+                    <i class="fas fa-globe"></i>
+
+                </div>
+                <div>
+
+                    <i class="fas fa-share-alt"></i>
+
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-column bg-black">
+
+            <div class="navLink">
+                <a href="#search" class="search fade1">Search</a>
+                <a href="#category" class="category fade2">Category</a>
+                <a href="#area" class="area fade3">Area</a>
+                <a href="#ingredients" class="ingredients fade4">Ingredients</a>
+                <a href="#contact" class="contact fade4">Contact US</a></div>
+            <div class="p-3 pb-2">
+                <a><i class="fab fa-facebook-f m-2"></i></a>
+                <a><i class="fab fa-twitter m-2"></i></a>
+                <a><i class="fab fa-linkedin m-2"></i></a>
+                <a><i class="fab fa-github m-2"></i></a>
+
+                <a><i class="fas fa-globe m-2"></i></a>
+            </div>
+            <div class="w-75">
+                <p class="pb-5 ps-3">Copyright Â© 2019 All Rights</p>
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="container p-md-4 ps-4">
+        <div id="home" class="row mt-1 gy-4 ">
+
+        </div>
+    </section>
+    <section id="search" class="ps-md-0 ps-4 container d-none">
+        <div class=" row p-4">
+            <div class="col-md-6">
+                <input type="text" id="searchName" class="w-100 form-input mb-3 me-md-5" placeholder="Search By Name..">
+            </div>
+            <div class="col-md-6">
+                <input type="text" id="searchletter" class="w-100 form-input" maxlength="1" placeholder="Search First Letter.."></div>
+        </div>
+        <div id="searchMeals" class="row mt-5 gy-4">
+
+        </div>
+    </section>
+
+    <section id="category" class="ps-md-0 ps-4 container d-none">
+        <div id="categoryList" class="row mt-1 gy-4">
+
+        </div>
+    </section>
+    <section id="area" class="ps-md-0 ps-4 container d-none">
+        <div id="areaList" class="row my-1 g-4">
+
+        </div>
+    </section>
+    <section id="ingredients" class="ps-md-0 ps-4 container d-none">
+        <div id="ingredientsList" class="row mt-1 g-4">
+
+        </div>
+    </section>
+    <section id="contact" class="container pt-5 d-none">
+        <form action="" class="w-75 text-center mx-auto mt-5">
+            <h3 class="text-white py-4">Contact Us...</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="text" id="userName" class="w-100 contactform" placeholder="Enter Your Name">
+                    <p id="invalidname" class="mt-1 rounded-2 bgvalid"></p>
+                </div>
+                <div class="col-md-6">
+                    <input type="email" id="userEmail" class="w-100 contactform" placeholder="Enter Your Email">
+                    <p id="invalidemail" class="mt-1 rounded-2 bgvalid "></p>
+                </div>
+
+            </div>
+            <div class="row ">
+                <div class="col-md-6">
+                    <input type="number" id="userPhone" class="w-100 contactform" placeholder="Enter Your Phone">
+                    <p id="invalidphone" class="mt-1 rounded-2 bgvalid"></p>
+
+                </div>
+                <div class="col-md-6">
+                    <input type="number" id="userAge" class="w-100 contactform" placeholder="Enter Your Age">
+                    <p id="invalidage" class="mt-1 rounded-2 bgvalid"></p>
+
+                </div>
+
+            </div>
+            <div class="row ">
+                <div class="col-md-6">
+                    <input type="password" id="userPassword" class="w-100 contactform" placeholder="Enter Password">
+                    <p id="invalidpassword" class="mt-1 rounded-2 bgvalid"></p>
+
+                </div>
+                <div class="col-md-6">
+                    <input type="password" id="userRePassword" class="w-100 contactform" placeholder="Enter REPassword">
+                    <p id="invalidrepassword" class="mt-1 rounded-2 bgvalid"></p>
+
+                </div>
+            </div>
+            <button type="submit" id="submit" class="btn btn-outline-danger mt-4" disabled> Supmit</button>
+
+
+        </form>
+    </section>
+
+    <section class="container p-4">
+        <div id="homedescMeal" class="row py-3 ">
+
+        </div>
+    </section>
+    <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
